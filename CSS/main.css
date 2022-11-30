@@ -1,0 +1,60 @@
+.contenedor {
+  background-color: #d1d1d1;
+  min-width: 100;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 12% 87% 1%;
+  grid-template-areas: "header" "main" "footer"; }
+  .contenedor header {
+    display: flex;
+    background-color: #ffa600;
+    flex-direction: row;
+    align-items: flex-start;
+    grid-area: header;
+    justify-content: space-around; }
+    .contenedor header h1 {
+      margin-bottom: 5px;
+      font-size: 3rem;
+      font-family: 'Open Sans', sans-serif;
+      margin-top: 30px; }
+    .contenedor header h1:hover {
+      transform: scale(1.1); }
+    .contenedor header nav ul {
+      display: flex;
+      list-style: none;
+      column-gap: 5px; }
+      .contenedor header nav ul li {
+        padding: 1px;
+        border-style: none;
+        margin-left: 10px;
+        background-color: #d1d1d1; }
+      .contenedor header nav ul li:hover {
+        transform: scale(0.9);
+        border-radius: 50px;
+        background-color: #d1d1d1; }
+  .contenedor main {
+    text-align: center;
+    grid-area: main;
+    height: 75vh; }
+    .contenedor main h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 3.5rem;
+      margin-top: 10px;
+      text-align: center; }
+    .contenedor main .moto {
+      display: flex;
+      justify-content: center; }
+    .contenedor main .parrafo {
+      text-align: center; }
+    .contenedor main .consultas {
+      position: fixed;
+      bottom: 0px;
+      right: 0px; }
+  .contenedor footer {
+    text-align: center;
+    grid-area: footer;
+    padding-top: 70px; }
+    .contenedor footer p {
+      text-align: center;
+      background-color: #ffa600; }
